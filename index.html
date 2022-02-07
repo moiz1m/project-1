@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	function performance(){
+		var val = document.getElementById('num').value;
+		if(val >= 50)
+		{
+			document.getElementById('result').innerHTML = "Good";
+			document.getElementById('result').style.color = 'red';
+			document.getElementById('result').style.backgroundColor = 'blue';
+		}
+
+		else
+		document.getElementById('result').innerHTML = "Failed";
+		}
+	</script>
+</head>
+<body>
+<input type="number" id="num" onkeyup="performance()">
+<p id="result"></p>
+</html>
